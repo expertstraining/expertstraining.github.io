@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<title>form</title>
+	<script>
+function away()
+{
+	alert("welcome");
+	var ch1=document.getElementById("check1").checked;
+	var ch2=document.getElementById("check2").checked;
+	var ch3=document.getElementById("check3").checked;
+	var ch4=document.getElementById("check4").checked;
+	if(document.getElementById("name").value.length==0)
+	{
+		alert("please don't leave empty Enter your name");
+		document.getElementById('name').focus();
+	}
+	else if(document.getElementById("address").value.length==0)
+	{
+		alert("please don't leave empty Enter your address");
+		address.focus();
+	}
+	else if(!(document.getElementById("email").value.match(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/)))
+	{
+		alert("please Enter Email Id correctly");
+		email.focus();
+	}
+	else if(document.getElementById("country").value=="Default"){
+		alert("please select the country you wanted to go");
+		country.focus();
+	}
+	else if(ch1==false && ch2==false && ch3==false &&ch4==false){
+		alert("Please select at least one language you khow");
+
+	}
+	esle if(!(document.getElementById("name").value.match(/^[a-z A-Z]+$/))){
+		alert("enter your namecorrectly");
+		name.focus();
+	}
+	else{
+		alert("your form is accepted");
+	}
+}
+</script>
+</head>
+<body>
+	Name:<input type="text"id="name">
+	<br>
+	Address:<input type="text" id="address"><br/>
+	Enter your Email Id:<input type="text" id="email"><br/>
+	Select Your Gender<br/>
+	<input type="radio" name="gender" value="male" checked='true'>male&nbsp
+		<input type="radio" name="gender" value="female">female<br/>
+	select the language you know:
+	&nbspNewari<input type="checkbox" id="check1"value="check">
+	English&nbsp<input type="checkbox" id="check2"value="check">
+	Nepali&nbsp<input type="checkbox" id="check3"value="check">
+	Hindi&nbsp<input type="checkbox" id="check4"value="check"><br/>
+	Select the country you wanted to go:<select id="country">
+	<option>Default</option>
+	<option>Nepal</option>
+	<option>America</option>
+	<option>Japan</option>
+	<option>China</option>
+	<option>India</option>
+	<option>Australia</option>
+</select>
+<button onclick="away()">submit</button>
+
+		</body>
+</html>
