@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class of Array</title>
+</head>
+<body>
+	<p >The numbers you entered are as follows:</p><span id="num"></span>
+	<p>The numbres after sorted in ascending order are as follows:</p><span id="Asc"></span>
+	<p>The numbres after sorted in decending order are as follows: <span id="Dsc"></p><span id="Dsc">
+	<script>
+	alert("Welcome to this program");
+var myarray = new Array();
+var phtml="";
+var shtml="";
+//Taking five users input numbers 
+for (var i=0;i<5;i++)
+{
+	myarray[i]=prompt("Now Please enter your number",i);
+	phtml +=myarray[i]+", ";
+}
+
+//end of user input
+document.getElementById("num").innerHTML=phtml;
+
+// Sorting the user given inputs
+for(var j=5;j>1;j--)
+{
+	for(var i=1;i<=j;i++)
+	{
+		if(myarray[i]<myarray[i-1]){
+			var tmp=myarray[i];
+			myarray[i]=myarray[i-1];
+			myarray[i-1]=tmp;
+		}
+	}
+}
+//end of sorting
+
+//Appending the values for ascending output
+for (var i=0;i<5;i++)
+{
+	shtml +=myarray[i]+"<br/>";
+}
+//Printing output in document
+document.getElementById("Asc").innerHTML=shtml;
+ phtml="";
+//Appending the values for ascending output
+for (var i=4;i>=0;i--)
+{
+	phtml +="<br/>"+myarray[i];
+}
+//Printing output in document
+document.getElementById("Dsc").innerHTML=phtml;
+//end
+</script>
+</body>
+</html>
