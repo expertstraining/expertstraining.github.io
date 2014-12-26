@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array day 2</title>
+
+	<style>
+	.heed{
+		background:#FD3551;
+		width:50%;
+		height: 500px;
+	}
+	.ta{
+		margin-top:100px:
+		background:#038C7E;
+		margin-left:100px; 
+	}
+	</style>
+	</head>
+	<body>
+		<div class="heed"><center><table border="2px solid blue" style="background:#038C7E"class="ta">
+			<tr>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Mobile</th>
+				<th colspan='2'>Email</th>
+			</tr>
+			<tr>
+				<td><span id="n1"></span></td>
+				<td><span id="add1"></span></td>
+				<td><span id="mobile1"></span></td>
+				<td><span id="Email1"></span></td>
+				<td><button onclick="table1()">edit1</button></td>
+				<td><input type="button"value="edit"id="www"></td>
+			</tr>
+			<tr>
+				<td><span id="n2"></span></td>
+				<td><span id="add2"></span></td>
+				<td><span id="mobile2"></span></td>
+				<td><span id="Email2"></span></td>
+				<td><button onclick="table2()">edit2</button></td>
+			</tr>
+			<tr>
+				<td><span id="n3"></span></td>
+				<td><span id="add3"></span></td>
+				<td><span id="mobile3"></span></td>
+				<td><span id="Email3"></span></td>
+				<td><button onclick="table3()">edit4</button></a></td>
+			</tr>
+			<tr>
+				<td><span id="n4"></span></td>
+				<td><span id="add4"></span></td>
+				<td><span id="mobile4"></span></td>
+				<td><span id="Email4"></span></td>
+				<td><button onclick="table4()">edit4</button></td>
+			</tr>
+		</table></center></div>
+		<script>
+		alert("welcome");
+	var myarray= new Array();
+	var add= new Array();
+	var mo=new Array();
+	var email=new Array();
+	var name="";
+	var address="";
+	var phone="";
+	var emailno="";
+	for(var i=0;i<4;i++)
+	{
+		alert("welcome");
+		myarray[i]=prompt("enter your name","Ram");
+		add[i]=prompt("enter your address","kathmndu");
+		mo[i]=prompt("enter your mobile number","98########");
+		email[i]=prompt("enter your Email Id","ram74@yahoo.com");
+
+	 name+= myarray[i] + ", ";
+	 address+= add[i] +", ";
+	 phone+=mo[i] +", ";
+	 emailno+=email[i]+", ";
+	}
+	document.getElementById("n1").innerHTML=myarray[0];
+	document.getElementById("n2").innerHTML=myarray[1];
+	document.getElementById("n3").innerHTML=myarray[2];
+	document.getElementById("n4").innerHTML=myarray[3];
+	document.getElementById("add1").innerHTML=add[0];
+	document.getElementById("add2").innerHTML=add[1];
+	document.getElementById("add3").innerHTML=add[2];
+	document.getElementById("add4").innerHTML=add[3];
+	document.getElementById("mobile1").innerHTML=mo[0];
+	document.getElementById("mobile2").innerHTML=mo[1];
+	document.getElementById("mobile3").innerHTML=mo[2];
+	document.getElementById("mobile4").innerHTML=mo[3];
+	document.getElementById("Email1").innerHTML=email[0];
+	document.getElementById("Email2").innerHTML=email[1];
+	document.getElementById("Email3").innerHTML=email[2];
+	document.getElementById("Email4").innerHTML=email[3];
+	function table1()
+	{
+		
+		var nu=0;
+		document.getElementById("name").innerHTML=myarray[nu];
+		document.getElementById("address").innerHTML=add[nu];
+		document.getElementById("cell").innerHTML=mo[nu];
+		document.getElementById("email").innerHTML=email[nu];
+	}
+	function table2()
+	{
+		
+		var nu=1;
+		document.getElementById("name").innerHTML=myarray[nu];
+		document.getElementById("address").innerHTML=add[nu];
+		document.getElementById("cell").innerHTML=mo[nu];
+		document.getElementById("email").innerHTML=email[nu];
+	}
+	function table3()
+	{
+		
+		var nu=2;
+		document.getElementById("name").innerHTML=myarray[nu];
+		document.getElementById("address").innerHTML=add[nu];
+		document.getElementById("cell").innerHTML=mo[nu];
+		document.getElementById("email").innerHTML=email[nu];
+	}
+	function table4()
+	{
+		
+		var nu=3;
+		document.getElementById("name").innerHTML=myarray[nu];
+		document.getElementById("address").innerHTML=add[nu];
+		document.getElementById("cell").innerHTML=mo[nu];
+		document.getElementById("email").innerHTML=email[nu];
+	}
+
+
+
+	</script>
+	<table>
+		<tr>
+			<td>Name:</td><td><span id="name"></span></td>
+		</tr>
+		<tr><td>Address:</td><td><span id="address"></span></td>
+		</tr>
+		<tr>
+			<td>Phone Number:</td><td><span id="cell"></span></td>
+		</tr>
+		<tr><td>Email:</td><td><span id="email"></span></td>
+		</tr>
+	</table>		
+</body>
+</html>

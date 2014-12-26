@@ -62,21 +62,21 @@
 			<li>Which one of the following is not a prime number?</li>
 				<ol type='a'>
 					<div class="left">
-					<li><input type="radio"name="q1"value='a'id='q1'>31</li>
-					<li><input type="radio"name="q1"value='b'>61</li>
+					<li><input type="radio"name="q1">31</li>
+					<li><input type="radio"name="q1">61</li>
 		</div>
 		<div class="right">
-			<li><input type="radio"name="q1"value='c'>71</li>
-			<li><input type="radio"name="q1">91</li>
+			<li><input type="radio"name="q1">71</li>
+			<li><input type="radio"name="q1"id='q1'>91</li>
 		</div>
 		</ol>
 		<br/>
 		<br/>
 		<br>
-		<li>(112 x 54) = ?</li>
+		<li>(112 x 5^4) = ?</li>
 		<ol type='a'>
 			<div class="left"><li><input type="radio"name="q2">67000</li>
-			<li><input type="radio"name="q2">70000</li>
+			<li><input type="radio"name="q2"id="q2">70000</li>
 		</div>
 		<div class="right">
 			<li><input type="radio"name="q2">76500</li>
@@ -84,16 +84,16 @@
 		</div>
 			</ol>
 			<br/><br><br>
-		<li> It is being given that (232 + 1) is completely divisible by a whole number. Which of the following numbers is completely divisible by this number?
+		<li> It is being given that (2^32 + 1) is completely divisible by a whole number. Which of the following numbers is completely divisible by this number?
 		</li>
 		<ol type='a'>
 			<div class="left">
-				<li><input type="radio"name="q3">(216 + 1)</li>
+				<li><input type="radio"name="q3">(2^16 + 1)</li>
 				<li><input type="radio"name="q3">(7 x 223)</li>
 		</div>
 		<div class="right">
-			<li><input type="radio"name="q3">(216 - 1)</li>
-			<li><input type="radio"name="q3">(296 + 1)</li>
+			<li><input type="radio"name="q3">(2^16 - 1)</li>
+			<li><input type="radio"name="q3"id="q3">(2^96 + 1)</li>
 		</div>
 		</ol>
 		<br/><br>
@@ -101,7 +101,7 @@
 		<li>	What least number must be added to 1056, so that the sum is completely divisible by 23 ?</li>
 		<ol type='a'>
 			<div class="left">
-			<li><input type="radio"name="q4">2</li> 
+			<li><input type="radio"name="q4"id="q4">2</li> 
 			<li><input type="radio"name="q4">3</li>
 		</div><div class="right">
 			<li><input type="radio"name="q4">18</li>
@@ -115,7 +115,7 @@
 264, 396, 462, 792, 968, 2178, 5184, 6336</span>
 		<ol type='a'>
 			<div class="left">
-			<li><input type="radio"name="q5">4</li>
+			<li><input type="radio"name="q5"id="q5">4</li>
 			<li><input type="radio"name="q5">5</li>
 		</div>
 		<div class="right">
@@ -129,7 +129,7 @@
 Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case.</li>
 <ol type='a'>
 	<div class="left">
-	<li><input type="radio"name="q6">4</li>
+	<li><input type="radio"name="q6"id="q6">4</li>
 	<li><input type="radio"name="q6">7</li></div><br>
 	
 	<div class="right"><li><input type="radio"name="q6">9</li>
@@ -141,7 +141,7 @@ Find the greatest number that will divide 43, 91 and 183 so as to leave the same
 <ol type="a">
 	<div class="left">
 		<li><input type="radio"name="q7">Report</li>
-	<li><input type="radio"name="7">Feild</li></div>
+	<li><input type="radio"name="7"id="q7">Feild</li></div>
 	<div class="right">
 	<li><input type="radio"name="q7">Record<li>
 	<li><input type="radio"name="q7">File</li>
@@ -154,7 +154,7 @@ Find the greatest number that will divide 43, 91 and 183 so as to leave the same
 <li>'OS' computer abbreviation usually means ?</li>
 <ol type="a">
 	<div class="left">
-						<li><input type="radio"name="q8">Operating System</li>
+						<li><input type="radio"name="q8"id="q8">Operating System</li>
 	 					<li><input type="radio"name="q8">Order of Significance</li>
 	 				</div>
 	 				<div class="right">
@@ -177,7 +177,7 @@ Find the greatest number that will divide 43, 91 and 183 so as to leave the same
 			<li>'.MPG' extension refers usually to what kind of file?</li>
  			<ol type='a'><div class="left"><li><input type="radio"name="q10">WordPerfect Document file</li><li><input type="radio"name="q10">MS Office document</li>
  			</div>
- 				<div class="right"><li><input type="radio"name="q10">Animation/movie file</li><li><input type="radio"name="q10">Image file</li>
+ 				<div class="right"><li><input type="radio"name="q10"id="q10">Animation/movie file</li><li><input type="radio"name="q10">Image file</li>
  				</div>
 </ol>
 <br>
@@ -212,7 +212,7 @@ Entomology is the science that studies</li>
 		<br><br><br>
 
 <li>CORPULENT</li>
-	<ol type='a'><div class="left"><li><input type="radio"name="q14">Lean</li><li><input type="radio"name="q14">Gaunt</li></div><div class="right"><li>Emaciated</li><li>	Obese</li>
+	<ol type='a'><div class="left"><li><input type="radio"name="q14">Lean</li><li><input type="radio"name="q14">Gaunt</li></div><div class="right"><li><input type="radio"name="q14">Emaciated</li><li><input type="radio"name="q14" id="q14">	Obese</li>
 	</div>
 </ol>
 <br>
@@ -222,13 +222,13 @@ Entomology is the science that studies</li>
 <li>EMBEZZLE</li>
 <ol type='a'>
 	<div class="left">
-		<li><input type="radio"name="q15">Misappropriate</li><li><input type="radio"name="q15">Balance</li>
+		<li><input type="radio"name="q15"id="q15">Misappropriate</li><li><input type="radio"name="q15">Balance</li>
 	</div><div class="right"><li><input type="radio"name="q15">	Remunerate</li><li><input type="radio"name="q15">Clear</li></div>
 </ol>
 <br><br><br>
 <li>VENT</li>
 <ol type='a'>
-	<div class="left"><li>	<input type="radio"name="q16">Opening</li><li><input type="radio"name="q16">Stodge</li></div><div class="right">
+	<div class="left"><li>	<input type="radio"name="q16"id="q16">Opening</li><li><input type="radio"name="q16">Stodge</li></div><div class="right">
 	<li><input type="radio"name="q16">End	</li><li><input type="radio"name="q16">	Past tense of go</li></div></ol>
 	<br>
 	<br>
@@ -236,21 +236,21 @@ Entomology is the science that studies</li>
 <li>AUGUST</li>
 	<ol type='a'>
 		<div class="left"><li><input type="radio"name="q17">Common</li><li><input type="radio"name="q17">Ridiculous</li></div>
-		<div class="right"><li><input type="radio"name="q17">Dignified</li><li><input type="radio"name="q17">Petty</li></div>
+		<div class="right"><li><input type="radio"name="q17"id="q17">Dignified</li><li><input type="radio"name="q17">Petty</li></div>
 	</ol><br><br><br>
 <li>CANNY</li>
 <ol type='a'>
 	<div class="left"><li><input type="radio"name="q18">Obstinate</li><li><input type="radio"name="q18">Handsome</li></div>
-<div class="right"><li><input type="radio"name="q18">	Clever</li><li><input type="radio"name="q18">Stout</li></div></ol><br><br><br>
+<div class="right"><li><input type="radio"name="q18"id="q18">	Clever</li><li><input type="radio"name="q18">Stout</li></div></ol><br><br><br>
 <li>ALERT</li>
 <ol type='a'>
 	<div class="left"><li><input type="radio"name="q19">Energetic</li><li><input type="radio"name="q19">	Observant</li></div>
-	<div class="right"><li><input type="radio"name="q19">Intelligent</li><li><input type="radio"name="q19">	Watchful</li></div>
+	<div class="right"><li><input type="radio"name="q19">Intelligent</li><li><input type="radio"name="q19"id="19">	Watchful</li></div>
 </ol><br><br><br>
 <li>BRIEF</li>
 	<ol type='a'>
 		<div class="left"><li><input type="radio"name="q20">Limited</li><li><input type="radio"name="q20">Small</li></div>
-		<div class="right"><li><input type="radio"name="q20">Little</li><li><input type="radio"name="q20">Short</li></div>
+		<div class="right"><li><input type="radio"name="q20">Little</li><li><input type="radio"name="q20"id="q20">Short</li></div>
 	</ol>
 	<br><br><br>
 	<button class="btn btn-info"onclick="quiz()">Submit</button>
@@ -275,16 +275,24 @@ Entomology is the science that studies</li>
 			</div>
 		</div>
 			<script type="text/javascript">
-				function quiz(){
-					alert("welcome");
-					var count;
-					var co=document.getElementById("q1").value;
-					if(co==)
-					
-					//if(a=='a'){
-					//	alert("correct")
-					}
-				}
+				
+
+function quiz()
+ {
+  var score=0;
+
+  for(var i=1;i<=20;i++)
+  {
+    var id="q"+i;
+   if(document.getElementById(id).checked)
+    score++;
+ }
+  if(score>=10)
+    alert('Congratulation!!! great you scored '+score);
+  else
+    alert('Sorry!!! score of yours '+score);
+}
+	
 			</script>
 
 	

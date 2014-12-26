@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array day 2</title>
+</head>
+<body>
+
+	<table border="2px solid black">
+		<tr><th>Name</th>
+			<th>Address</th>
+			<th>phone number</th>
+			<th colspan='2'>Email Id</th>
+		</tr>
+			<tr>
+				<td><span id="n1"></span></td>
+				<td><span id="add1"></span></td>
+				<td><span id="mobile1"></span></td>
+				<td><span id="Email1"></span></td>
+				<td><button onclick="table1(0)">edit1</button></td>
+			</tr>
+			<tr>
+				<td><span id="n2"></span></td>
+				<td><span id="add2"></span></td>
+				<td><span id="mobile2"></span></td>
+				<td><span id="Email2"></span></td>
+				<td><button onclick="table2(1)">edit2</button></td>
+			</tr>
+			<tr>
+				<td><span id="n3"></span></td>
+				<td><span id="add3"></span></td>
+				<td><span id="mobile3"></span></td>
+				<td><span id="Email3"></span></td>
+				<td><button onclick="table3(2)">edit3</button></td>
+			</tr>
+			<tr>
+				<td><span id="n4"></span></td>
+				<td><span id="add4"></span></td>
+				<td><span id="mobile4"></span></td>
+				<td><span id="Email4"></span></td>
+				<td><button onclick="table4(3)">edit4</button></td>
+			</tr>
+
+
+
+		</table>
+		<script type="text/javascript">
+	var i;
+	var id;
+	var myname=new Array();
+	var myaddress=new Array();
+	var myemail=new Array();
+	var myphone=new Array();
+	for(i=0;i<5;i++)
+	{
+		myname[i,0]=prompt("enter your name","name");
+		myaddress[i,1]=prompt("enter your address","address");
+		myemail[i,2]=prompt("enter your Email","yahoo@yahoo.com");
+		myphone[i,3]=prompt("enter your phone number","9800000000");
+	}
+	document.getElementById("n1").innerHTML=myname[0,0];
+	document.getElementById("n2").innerHTML=myname[1,0];
+	document.getElementById("n3").innerHTML=myname[2,0];
+	document.getElementById("n4").innerHTML=myname[3,0];
+	document.getElementById("add1").innerHTML=myaddress[0,1];
+	document.getElementById("add2").innerHTML=myaddress[1,1];
+	document.getElementById("add3").innerHTML=myaddress[2,1];
+	document.getElementById("add4").innerHTML=myaddress[3,1];
+	document.getElementById("mobile1").innerHTML=myphone[0,3];
+	document.getElementById("mobile2").innerHTML=myphone[1,3];
+	document.getElementById("mobile3").innerHTML=myphone[2,3];
+	document.getElementById("mobile4").innerHTML=myphone[3,3];
+	document.getElementById("Email1").innerHTML=myemail[0,2];
+	document.getElementById("Email2").innerHTML=myemail[1,2];
+	document.getElementById("Email3").innerHTML=myemail[2,2];
+	document.getElementById("Email4").innerHTML=myemail[3,2];
+	function table(i)
+	{
+		document.getElementById("txtname").value=myarray[i,0];
+		document.getElementById("txtaddress").value=myarray[i,1];
+		document.getElementById("txtphone").value=myarray[i,2];
+		document.getElementById("txtemail").value=myarray[i,3];
+		id=i;
+	}
+
+	</script>
+	<table>
+		<tr>
+			<td>Name:</td><td><input type="text" id="txtname"></td>
+		</tr>
+		<tr><td>Address:</td><td><input type="text" id="txtaddress"></td>
+		</tr>
+		<tr>
+			<td>Phone Number:</td><td><input type="text" id="txtphone"></td>
+		</tr>
+		<tr><td>Email:</td><td><input type="text" id="txtemail"></td>
+		</tr>
+	</table>
+	</body>
+	</html>
