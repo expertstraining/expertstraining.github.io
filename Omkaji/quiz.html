@@ -22,25 +22,39 @@
 	}
 
 	</style>
-	<script type="text/javascript">
-	<script type="text/javascript">
-function quiz()
- {
-  var score=0;
+	<script>
+	function Answer()
+ 	{
+  		var score=0;
+		alert("welcome");
+  		/*if(document.getElementById('q1').checked)
+  		{
+  			score++;
+  		alert("welcome");
+  		alert(score);
+  		}
+  		else{
+  		alert("badluck");
+  		}*/
+  		for(var i=1;i<=20;i++)
+  		{
 
-  for(var i=1;i<=20;i++)
-  {
-    var id="q"+i;
-   if(document.getElementById(id).checked)
-    score++;
- }
-  if(score>=10)
-    alert('Congratulation!!! great you scored '+score);
-  else
-    alert('Sorry!!! score of yours '+score);
-}
-	
-			</script>
+			var id='q'+i;
+			
+			if(document.getElementById(id).checked)
+   			{
+    			score++;
+	    	}
+ 		}
+ 		
+  		if(score>=10){
+    		alert('Congratulation!!! great you scored '+score);
+    	}
+  		else{
+    		alert('Sorry!!! score of yours '+score);
+    	}
+	}
+	</script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -83,12 +97,12 @@ function quiz()
 			<li>Which one of the following is not a prime number?</li>
 				<ol type='a'>
 					<div class="left">
-					<li><input type="radio"name="q1">31</li>
-					<li><input type="radio"name="q1">61</li>
+					<li><input type="radio" name="q1">31</li>
+					<li><input type="radio" name="q1">61</li>
 		</div>
 		<div class="right">
-			<li><input type="radio"name="q1">71</li>
-			<li><input type="radio"name="q1" id="q1">91</li>
+			<li><input type="radio" name="q1">71</li>
+			<li><input type="radio" name="q1" id="q1">91</li>
 		</div>
 		</ol>
 		<br/>
@@ -96,12 +110,12 @@ function quiz()
 		<br>
 		<li>(112 x 5^4) = ?</li>
 		<ol type='a'>
-			<div class="left"><li><input type="radio"name="q2">67000</li>
-			<li><input type="radio"name="q2"id="q2">70000</li>
+			<div class="left"><li><input type="radio" name="q2">67000</li>
+			<li><input type="radio" name="q2" id="q2">70000</li>
 		</div>
 		<div class="right">
-			<li><input type="radio"name="q2">76500</li>
-			<li><input type="radio"name="q2">77200</li>
+			<li><input type="radio" name="q2">76500</li>
+			<li><input type="radio" name="q2">77200</li>
 		</div>
 			</ol>
 			<br/><br><br>
@@ -109,12 +123,12 @@ function quiz()
 		</li>
 		<ol type='a'>
 			<div class="left">
-				<li><input type="radio"name="q3">(2^16 + 1)</li>
-				<li><input type="radio"name="q3">(7 x 223)</li>
+				<li><input type="radio" name="q3">(2^16 + 1)</li>
+				<li><input type="radio" name="q3">(7 x 223)</li>
 		</div>
 		<div class="right">
-			<li><input type="radio"name="q3">(2^16 - 1)</li>
-			<li><input type="radio"name="q3"id="q3">(2^96 + 1)</li>
+			<li><input type="radio" name="q3">(2^16 - 1)</li>
+			<li><input type="radio" name="q3" id="q3">(2^96 + 1)</li>
 		</div>
 		</ol>
 		<br/><br>
@@ -122,11 +136,11 @@ function quiz()
 		<li>	What least number must be added to 1056, so that the sum is completely divisible by 23 ?</li>
 		<ol type='a'>
 			<div class="left">
-			<li><input type="radio"name="q4"id="q4">2</li> 
-			<li><input type="radio"name="q4">3</li>
+			<li><input type="radio" name="q4" id="q4">2</li> 
+			<li><input type="radio" name="q4">3</li>
 		</div><div class="right">
-			<li><input type="radio"name="q4">18</li>
-			<li><input type="radio"name="q4">21</li>
+			<li><input type="radio" name="q4">18</li>
+			<li><input type="radio" name="q4">21</li>
 		</div>
 		</ol>
 		<br>
@@ -136,11 +150,11 @@ function quiz()
 264, 396, 462, 792, 968, 2178, 5184, 6336</span>
 		<ol type='a'>
 			<div class="left">
-			<li><input type="radio"name="q5"id="q5">4</li>
-			<li><input type="radio"name="q5">5</li>
+			<li><input type="radio" name="q5" id="q5">4</li>
+			<li><input type="radio" name="q5">5</li>
 		</div>
 		<div class="right">
-			<li><input type="radio"name="q5">6</li>
+			<li><input type="radio" name="q5">6</li>
 			<li><input type="radio"name="q5">7</li>
 		
 		</div></ol>
@@ -150,22 +164,22 @@ function quiz()
 Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case.</li>
 <ol type='a'>
 	<div class="left">
-	<li><input type="radio"name="q6"id="q6">4</li>
-	<li><input type="radio"name="q6">7</li></div><br>
+	<li><input type="radio" name="q6" id="q6">4</li>
+	<li><input type="radio" name="q6">7</li></div><br>
 	
-	<div class="right"><li><input type="radio"name="q6">9</li>
-	<li><input type="radio"name="q6">13</li></div>
+	<div class="right"><li><input type="radio" name="q6">9</li>
+	<li><input type="radio" name="q6">13</li></div>
 	<br>
 		<br><br>
 </ol>
 	<li>What is part of a database that holds only one type of information?</li>
 <ol type="a">
 	<div class="left">
-		<li><input type="radio"name="q7">Report</li>
-	<li><input type="radio"name="7"id="q7">Feild</li></div>
+		<li><input type="radio" name="q7">Report</li>
+	<li><input type="radio" name="q7" id="q7">Feild</li></div>
 	<div class="right">
-	<li><input type="radio"name="q7">Record<li>
-	<li><input type="radio"name="q7">File</li>
+	<li><input type="radio" name="q7">Record</li>
+	<li><input type="radio" name="q7">File</li>
 </div>
 
 </ol>
@@ -175,12 +189,12 @@ Find the greatest number that will divide 43, 91 and 183 so as to leave the same
 <li>'OS' computer abbreviation usually means ?</li>
 <ol type="a">
 	<div class="left">
-						<li><input type="radio"name="q8"id="q8">Operating System</li>
-	 					<li><input type="radio"name="q8">Order of Significance</li>
+						<li><input type="radio" name="q8" id="q8">Operating System</li>
+	 					<li><input type="radio" name="q8">Order of Significance</li>
 	 				</div>
 	 				<div class="right">
-	 					<li><input type="radio"name="q8">open software</li>
-	 					<li><input type="radio"name="q8">Optical Sensor</li>
+	 					<li><input type="radio" name="q8">open software</li>
+	 					<li><input type="radio" name="q8">Optical Sensor</li>
 	 				</div>
 	 			</ol>
 	 			<br>
@@ -188,17 +202,17 @@ Find the greatest number that will divide 43, 91 and 183 so as to leave the same
 				<br> 	
  <li>Which is a type of Electrically-Erasable Programmable Read-Only Memory?</li>
  <ol type="a">
- 	<div class="left"><li><input type="radio"name="q9">Flash</li><li><input type="radio"name="q9">Fury</li></div>
- 	<div class="right"><li><input type="radio"name="q9">Flange</li><li><input type="radio"name="q9">FRAM</li>
+ 	<div class="left"><li><input type="radio" name="q9" id="q9">Flash</li><li><input type="radio" name="q9">Fury</li></div>
+ 	<div class="right"><li><input type="radio" name="q9">Flange</li><li><input type="radio" name="q9">FRAM</li>
  	
  </div></ol>
  <br><br><br>
  
 
 			<li>'.MPG' extension refers usually to what kind of file?</li>
- 			<ol type='a'><div class="left"><li><input type="radio"name="q10">WordPerfect Document file</li><li><input type="radio"name="q10">MS Office document</li>
+ 			<ol type='a'><div class="left"><li><input type="radio" name="q10">WordPerfect Document file</li><li><input type="radio" name="q10">MS Office document</li>
  			</div>
- 				<div class="right"><li><input type="radio"name="q10"id="q10">Animation/movie file</li><li><input type="radio"name="q10">Image file</li>
+ 				<div class="right"><li><input type="radio" name="q10" id="q10">Animation/movie file</li><li><input type="radio" name="q10">Image file</li>
  				</div>
 </ol>
 <br>
@@ -208,32 +222,32 @@ Find the greatest number that will divide 43, 91 and 183 so as to leave the same
 Entomology is the science that studies</li>
 <ol type='a'>
 	<div class="left">
-<li><input type="radio"name="q11">	Behavior of human beings</li>
-<li><input type="radio"name="q11">	Insects</li></div>
+<li><input type="radio" name="q11">	Behavior of human beings</li>
+<li><input type="radio" name="q11" id="q11">	Insects</li></div>
 <div class="right">
-<li><input type="radio"name="q11">The origin and history of technical and scientific terms</li>
-<li><input type="radio"name="q11">The formation of rocks</li></div>
+<li><input type="radio" name="q11">The origin and history of technical and scientific terms</li>
+<li><input type="radio" name="q11">The formation of rocks</li></div>
 </ol>
 <br>
 <br>
 <li>Eritrea, which became the 182nd member of the UN in 1993, is in the continent of</li>
 	<ol type="a">
-		<div class="left"><li><input type="radio"name="q12">Asia</li><input type="radio"name="q12">Africa</li></div>
-		<div class="right"><li><input type="radio"name="q12">Europe</li><li><input type="radio"name="q12">Australia</li></div>
+		<div class="left"><li><input type="radio" name="q12">Asia</li><li><input type="radio" name="q12" id="q12">Africa</li></div>
+		<div class="right"><li><input type="radio" name="q12">Europe</li><li><input type="radio" name="q12">Australia</li></div>
 	</ol>
 	<br>
 	<br>
 	<br>
 	<li>For which of the following disciplines is Nobel Prize awarded?</li>
 		<ol type='a'>
-			<div class="left"><li><input type="radio"name="q13">Physics and Chemistry</li><li><input type="radio"name="q13">Physiology or Medicine</li>
+			<div class="left"><li><input type="radio" name="q13">Physics and Chemistry</li><li><input type="radio" name="q13">Physiology or Medicine</li>
 			</div>
-			<div class="right"><li>	<input type="radio"name="q13">Literature, Peace and Economics</li><li><input type="radio"name="q13">All of the above</li></div>
+			<div class="right"><li>	<input type="radio" name="q13">Literature, Peace and Economics</li><li><input type="radio" name="q13" id="q13">All of the above</li></div>
 		</ol>
 		<br><br><br>
 
 <li>CORPULENT</li>
-	<ol type='a'><div class="left"><li><input type="radio"name="q14">Lean</li><li><input type="radio"name="q14">Gaunt</li></div><div class="right"><li><input type="radio"name="q14">Emaciated</li><li><input type="radio"name="q14" id="q14">	Obese</li>
+	<ol type='a'><div class="left"><li><input type="radio" name="q14">Lean</li><li><input type="radio" name="q14">Gaunt</li></div><div class="right"><li><input type="radio" name="q14">Emaciated</li><li><input type="radio" name="q14" id="q14">	Obese</li>
 	</div>
 </ol>
 <br>
@@ -243,61 +257,51 @@ Entomology is the science that studies</li>
 <li>EMBEZZLE</li>
 <ol type='a'>
 	<div class="left">
-		<li><input type="radio"name="q15"id="q15">Misappropriate</li><li><input type="radio"name="q15">Balance</li>
-	</div><div class="right"><li><input type="radio"name="q15">	Remunerate</li><li><input type="radio"name="q15">Clear</li></div>
+		<li><input type="radio" name="q15" id="q15">Misappropriate</li><li><input type="radio" name="q15">Balance</li>
+	</div><div class="right"><li><input type="radio" name="q15">	Remunerate</li><li><input type="radio" name="q15">Clear</li></div>
 </ol>
 <br><br><br>
 <li>VENT</li>
 <ol type='a'>
-	<div class="left"><li>	<input type="radio"name="q16"id="q16">Opening</li><li><input type="radio"name="q16">Stodge</li></div><div class="right">
-	<li><input type="radio"name="q16">End	</li><li><input type="radio"name="q16">	Past tense of go</li></div></ol>
+	<div class="left"><li>	<input type="radio" name="q16" id="q16">Opening</li><li><input type="radio" name="q16">Stodge</li></div><div class="right">
+	<li><input type="radio" name="q16">End	</li><li><input type="radio" name="q16">	Past tense of go</li></div></ol>
 	<br>
 	<br>
 	<br>
 <li>AUGUST</li>
 	<ol type='a'>
-		<div class="left"><li><input type="radio"name="q17">Common</li><li><input type="radio"name="q17">Ridiculous</li></div>
-		<div class="right"><li><input type="radio"name="q17"id="q17">Dignified</li><li><input type="radio"name="q17">Petty</li></div>
+		<div class="left"><li><input type="radio" name="q17">Common</li><li><input type="radio" name="q17">Ridiculous</li></div>
+		<div class="right"><li><input type="radio" name="q17" id="q17">Dignified</li><li><input type="radio" name="q17">Petty</li></div>
 	</ol><br><br><br>
 <li>CANNY</li>
 <ol type='a'>
-	<div class="left"><li><input type="radio"name="q18">Obstinate</li><li><input type="radio"name="q18">Handsome</li></div>
-<div class="right"><li><input type="radio"name="q18"id="q18">	Clever</li><li><input type="radio"name="q18">Stout</li></div></ol><br><br><br>
+	<div class="left"><li><input type="radio" name="q18">Obstinate</li><li><input type="radio" name="q18">Handsome</li></div>
+<div class="right"><li><input type="radio" name="q18"id="q18">	Clever</li><li><input type="radio" name="q18">Stout</li></div></ol><br><br><br>
 <li>ALERT</li>
 <ol type='a'>
-	<div class="left"><li><input type="radio"name="q19">Energetic</li><li><input type="radio"name="q19">	Observant</li></div>
-	<div class="right"><li><input type="radio"name="q19">Intelligent</li><li><input type="radio"name="q19"id="19">	Watchful</li></div>
+	<div class="left"><li><input type="radio" name="q19">Energetic</li><li><input type="radio" name="q19">	Observant</li></div>
+	<div class="right"><li><input type="radio" name="q19">Intelligent</li><li><input type="radio" name="q19" id="q19">	Watchful</li></div>
 </ol><br><br><br>
 <li>BRIEF</li>
 	<ol type='a'>
-		<div class="left"><li><input type="radio"name="q20">Limited</li><li><input type="radio"name="q20">Small</li></div>
-		<div class="right"><li><input type="radio"name="q20">Little</li><li><input type="radio"name="q20"id="q20">Short</li></div>
+		<div class="left"><li><input type="radio" name="q20">Limited</li><li><input type="radio" name="q20">Small</li></div>
+		<div class="right"><li><input type="radio" name="q20">Little</li><li><input type="radio" name="q20" id="q20">Short</li></div>
 	</ol>
 	<br><br><br>
-	<button class="btn btn-info"onclick="quiz()">Submit</button>
+	<button onclick="Answer()"class="btn btn-info">Submit</button>
 	</div>
 </font>
 </div>
 </div>
 </div>
 </div>
-<div class="container-fluid">
-	<div class="row">
-		
-				<div class="col-md-12">
-         			<div style="background-color:#211811;color:blue;width:100%;padding-left:15px;text-align:left;padding-top:5px">
+<div style="clear:both"></div>
+         			<div style="background-color:#211811;color:blue;width:100%;padding-left:15px;text-align:left;padding-top:5px;position:relative">
 						Omkar Building, 7th Floor,<br/>
 						New Baneshwor, Kathmandu, Nepal<br/>
 						Phone: 977 1 4785677<br/>
 						Email: info@expertstraining.com<br/>
 						Copyright 2013-2014 Experts Training
 					</div>
-				</div>
-			</div>
-		</div>
-			
-
-	
-
 	</body>
 </html>
