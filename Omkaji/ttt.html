@@ -69,16 +69,16 @@
 			<input type="text"id="social"size='35'><br/>
 
 			Future plan?<br/>
-			<textarea rows="10" cols='50'></textarea><br>
+			<textarea rows="10" cols='50' id="tearea"></textarea><br>
 			Why you need scholarship?<br/>
 
-			<textarea rows='10'cols='50'></textarea><br/>
+			<textarea rows='10'cols='50'id="tearea1"></textarea><br/>
 			Yearly income of your family?<br/>
-			<input type="text"id="income"size='35'>
+			<input type="text"id="income"size='35' id="income">
 			<br>
 			Last earned Degree?
 			<br>
-			<input type="text"id="Degree"size='35'><br/>
+			<input type="text"id="Degree"size='35' id="degree"><br/>
 			<br/>
 			<button onclick="forme()"value="submit"id="sum">submit</button>
 			</div>
@@ -108,6 +108,14 @@ function forme()
 	if(document.getElementById("social").value.length=='0'){
 		alert("Please don't leave Empty");
 		document.getElementById("social").focus();
+	}
+	if(document.getElementById("tearea").value.length=='0'){
+		alert("Please don't leave empty");
+		document.getElementById("tearea").focus();
+	}
+	if(document.getElementById("tearea1").value.length=='0'){
+		alert("Please don't leave empty");
+		document.getElementById("tearea1").focus();
 	}
 	if(!(document.getElementById("name").value.match(/^[a-z A-Z]+$/)))
 	{
