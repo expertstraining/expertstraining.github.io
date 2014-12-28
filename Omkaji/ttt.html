@@ -78,7 +78,7 @@
 			<br>
 			Last earned Degree?
 			<br>
-			<input type="text"id="Degree"size='35' id="degree"><br/>
+			<input type="text" size='35' id="degree"><br/>
 			<br/>
 			<button onclick="forme()"value="submit"id="sum">submit</button>
 			</div>
@@ -112,6 +112,12 @@ function forme()
 	if(document.getElementById("tearea").value.length=='0'){
 		alert("Please don't leave empty");
 		document.getElementById("tearea").focus();
+	}if(document.getElementById("income").value.length=='0'){
+		alert("Please don't leave empty");
+		document.getElementById("income").focus();
+	}if(document.getElementById("degree").value.length=='0'){
+		alert("Please don't leave empty");
+		document.getElementById("degree").focus();
 	}
 	if(document.getElementById("tearea1").value.length=='0'){
 		alert("Please don't leave empty");
