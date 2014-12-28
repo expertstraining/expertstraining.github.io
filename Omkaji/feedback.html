@@ -11,15 +11,49 @@
 		 padding-left:15px;
 		 text-align:left;
 		 padding-top:5px;
-		 position:relative;
+		 position:absolute;
 		 bottom:0px;
 	}
 	</style>
 	<script>
 	function go(){
-		alert("Thanks For Your Complement And Suggestion");
-	
-}
+	if(document.getElementById("name").value.length==0){
+		alert('please dont leave empty name');
+		document.getElementById('name').focus();
+	}
+	else if(document.getElementById("phone").value.length==0){
+		alert('please dont leave empty phone');
+		document.getElementById('phone').focus();
+	}
+	else if(!(document.getElementById("phone").value.match(/^[0-9]+$/))){
+		alert("please enter number in phone");
+		roll.focus();
+	}
+	else if(!(document.getElementById("name").value.match(/^[a-z A-Z]+$/))){
+		alert("please enter alphabates in name");
+		name.focus();
+	}
+	else if(!(document.getElementById("phone").value.length=='10'))
+	{
+		alert("please enter between"+10+"characters");
+		phone.focus();
+	}
+	else if(document.getElementById("email").value.length==0){
+		alert('please dont leave empty');
+		document.getElementById('email').focus();
+	}
+	else if(!(document.getElementById("email").value.match(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/)))
+	{
+		alert("please enter your Email Id correctly");
+		document.getElementById("email").focus();
+	}
+	else if(document.getElementById("tearea").value.length==0){
+		alert('please dont leave empty ');
+		document.getElementById('tearea').focus();
+	}
+
+	}
+
 	</script>
 	<link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css">
 <script src="Assets/Bootstrap/jquery.min.js"></script>
@@ -54,17 +88,17 @@
 <div class="container">
 	<div class="row"style="margin-top:108px;margin-bottom:20px">
 		<div class="col-md-12">
-	<p>If you have any complain or suggestion Please tell us.</p>
+	<h1>If you have any complain or suggestion Please tell us.</h1>
 	<table>
 <tr>
 	<td>
 Name:</td><td><input type="text"id="name"><br/></td></tr>
 <tr><td>
 Email Id:</td><td><input type="text" id="email"><br/></td></tr>
-<tr><td>Phone No:</td><td><input type="text"></td></tr>
+<tr><td>Phone No:</td><td><input type="text" id="phone"></td></tr>
 <tr>
 	<td>
-Feedback:</td><td><textarea rows="10" cols="60"></textarea></td></tr><br>
+Feedback:</td><td><textarea rows="10" cols="60" id="tearea"></textarea></td></tr><br>
 <tr><td rowspan='2'colspan='2'><input type="button" class="btn btn-info"value="submit" onclick="go()"></td></tr>
 
 </table>
@@ -73,7 +107,6 @@ Feedback:</td><td><textarea rows="10" cols="60"></textarea></td></tr><br>
 </div>
 </div>
 <div class="clear:both"></div>
-
 <div class="footer">
 						Omkar Building, 7th Floor,<br/>
 						New Baneshwor, Kathmandu, Nepal<br/>
@@ -81,7 +114,5 @@ Feedback:</td><td><textarea rows="10" cols="60"></textarea></td></tr><br>
 						Email: info@expertstraining.com<br/>
 						Copyright 2013-2014 Experts Training
 					</div>
-					<script>
-
 </body>
 </html>
